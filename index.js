@@ -36,7 +36,7 @@
 
      const timeIn = this.timeInEvents.find(event => event.date === date)
      const timeOut = this.timeOutEvents.find(event => event.date === date)
-     return (timeOut.hour - timeIn.hour)/100
+     return timeOut.hour/100 - timeIn.hour/100
  }
 
  function wagesEarnedOnDate (date) {
