@@ -56,7 +56,7 @@
  }
 
  function calculatePayroll (array) {
-     return array.reduce((total, record) => total + allWagesFor(record), 0)
+     return array.reduce((total, record) => total + allWagesFor.call(record), 0)
  }
 
 let allWagesFor = function () {
