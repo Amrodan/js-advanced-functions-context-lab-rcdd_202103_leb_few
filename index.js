@@ -43,13 +43,9 @@
      return hoursWorkedOnDate(date) * this.payPerHour
  }
 
- function allWagesFor (record) {
-     const dates = record.timeOutEvents.map(event => event.date)
+ 
 
-     return dates.reduce((total, date) => total + wagesEarnedOnDate (record, date), 0)
- }
-
- function createEmployeeRecords (array){
+ function createEmployeeRecords (array) {
      const employeeRecords = []
      array.forEach(arr => employeeRecords.push(createEmployeeRecord(arr)))
      return employeeRecords
