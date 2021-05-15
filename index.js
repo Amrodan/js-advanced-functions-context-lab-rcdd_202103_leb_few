@@ -61,7 +61,7 @@
 
  function calculatePayroll (array) {
      return array.reduce((total, record) => total + allWagesFor(record), 0)
- } 
+ }
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
