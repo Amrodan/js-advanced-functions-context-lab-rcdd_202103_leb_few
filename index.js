@@ -43,7 +43,7 @@
      return hoursWorkedOnDate(date) * this.payPerHour
  }
 
- 
+
 
  function createEmployeeRecords (array) {
      const employeeRecords = []
