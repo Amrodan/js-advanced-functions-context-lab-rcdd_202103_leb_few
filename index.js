@@ -13,8 +13,8 @@
  }
 
  function createEmployees(array) {
-     const employees = []
-     array.forEach( employee => employees.push(createEmployeeRecord(employee)))
+     const employees = [...array]
+    //  array.forEach( employee => employees.push(createEmployeeRecord(employee)))
      return employees
  }
 
