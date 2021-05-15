@@ -52,7 +52,7 @@
  }
 
  function findEmployeeByFirstName(srcArray, firstName) {
-     return srcArray.find(record => record.firstName === firstName)
+     return srcArray.find(empl => empl.firstName === firstName)
  }
 
  function calculatePayroll (array) {
